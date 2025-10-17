@@ -1,0 +1,13 @@
+
+// grpc-port/service/method
+
+GRPC localhost:9001/BillingService/CreateBillingAccount
+
+
+// Request body
+
+{
+  "patientId": "1243432423432",
+  "name" : "Ngoc anh",
+  "email" : "ngocanh@example.com"
+}

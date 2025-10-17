@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/docker-compose.yml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/docker-compose.yml" />
+              <option name="originalContent" value="version: &quot;3.9&quot;&#10;&#10;services:&#10;  postgres:&#10;    image: postgres:16&#10;    container_name: patient-db&#10;    environment:&#10;      POSTGRES_USER: admin&#10;      POSTGRES_PASSWORD: admin123&#10;      POSTGRES_DB: patient_db&#10;      TZ: UTC&#10;    ports:&#10;      - &quot;5432:5432&quot;       # Mở cổng PostgreSQL ra host để bạn có thể connect từ bên ngoài&#10;    volumes:&#10;      - postgres_data:/var/lib/postgresql/data   # Lưu dữ liệu DB ra ngoài container&#10;    networks:&#10;      - patient-network   # Cho phép các service khác (vd: Spring Boot app) cùng mạng này truy cập DB&#10;    restart: unless-stopped  # Tự khởi động lại nếu container bị tắt bất ngờ&#10;&#10;networks:&#10;  patient-network:&#10;    driver: bridge&#10;&#10;volumes:&#10;  postgres_data:&#10;    driver: local&#10;&#10;" />
+              <option name="updatedContent" value="version: &quot;3.9&quot;&#10;&#10;services:&#10;  postgres:&#10;    image: postgres:16&#10;    container_name: patient-db&#10;    environment:&#10;      POSTGRES_USER: admin&#10;      POSTGRES_PASSWORD: admin123&#10;      POSTGRES_DB: patient_db&#10;      TZ: UTC&#10;    ports:&#10;      - &quot;5432:5432&quot;       # Mở cổng PostgreSQL ra host để bạn có thể connect từ bên ngoài&#10;    volumes:&#10;      - postgres_data:/var/lib/postgresql/data   # Lưu dữ liệu DB ra ngoài container&#10;    networks:&#10;      - patient-network   # Cho phép các service khác (vd: Spring Boot app) cùng mạng này truy cập DB&#10;    restart: unless-stopped  # Tự khởi động lại nếu container bị tắt bất ngờ&#10;&#10;networks:&#10;  patient-network:&#10;    driver: bridge&#10;&#10;volumes:&#10;  postgres_data:&#10;    driver: local" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
