@@ -3,8 +3,8 @@ POST http://localhost:4000/api/v1/patients
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "email": "ngocanh@gmae11.com",
+  "name": "John Doe billing account",
+  "email": "test_billing_account-test-kafka6@gmail.com",
   "address": "123 Main St, Cityville",
   "dateOfBirth":"1990-01-01"
 }
